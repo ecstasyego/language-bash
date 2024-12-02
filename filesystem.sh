@@ -1,0 +1,7 @@
+path="/root/user/example.text.file.txt"
+directory="${path%/*}"
+filename="${path##*/}"
+extension="${path##*.}"
+echo "$directory"
+echo "$filename"
+echo "$extension"
