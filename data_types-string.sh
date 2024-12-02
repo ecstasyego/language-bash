@@ -16,7 +16,7 @@ echo "${str//o/}"  # remove
 echo "${str//[a-z]/}"  # remove
 echo "${str//[A-Z]/}"  # remove
 
-# Remove
+# Remove[#:remove left side / %:remove right side]
 str="xyz12345abcedfgh321"
 echo "${str#*z}"
 echo "${str#*5}"
@@ -25,3 +25,7 @@ echo "${str#*[0-9]}"
 echo "${str##*[0-9]}"
 echo "${str#*[a-z]}"
 echo "${str##*[a-z]}"
+
+echo "${str%a*}"
+echo "${str%3*}"
+echo "${str%%3*}"
